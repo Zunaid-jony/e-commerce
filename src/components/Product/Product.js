@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaShoppingCart } from 'react-icons/fa';
 import './Product.css'
 
 
@@ -15,7 +16,8 @@ const Product = (props) => {
                 <p> <small> by:{seller}</small></p>
                 <p className=''> Price: {price}</p>
                 <p> <small>Only {stock} LEFT IN STOCK - order soon</small></p>
-                <button className='btn-regular'>Add to cart</button>
+                <button onClick= { () => props.handleAddToCart(props.product)}
+                className='btn-regular'> <FaShoppingCart /> Add to cart</button>
             </div>
         </div>
     );
