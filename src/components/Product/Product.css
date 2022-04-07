@@ -1,0 +1,27 @@
+.product{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    margin-right:  5px;
+}
+.product-name{
+    color: blue;
+    font-weight: 400;
+    text-align: left;
+}
+.product-name p{
+    text-align: left;
+}
+.btn-regular{
+    background-color: goldenrod;
+    width: 150px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    
+    
+    
+}
+.text-1{
+    text-align: left;
+}
+
