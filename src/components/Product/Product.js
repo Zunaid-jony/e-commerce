@@ -1,5 +1,8 @@
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
+import { AiFillStar } from 'react-icons/ai';
+import { AiOutlineStar } from 'react-icons/ai';
+import Rating from 'react-rating';
 import './Product.css'
 
 
@@ -16,7 +19,11 @@ const Product = (props) => {
                 <p> <small> by:{seller}</small></p>
                 <p className=''> Price: {price}</p>
                 <p> <small>Only {stock} LEFT IN STOCK - order soon</small></p>
-                <button onClick= { () => props.handleAddToCart(props.product)}
+                <p className='start'>  <AiFillStar></AiFillStar> <AiFillStar></AiFillStar> <AiFillStar></AiFillStar> <AiOutlineStar></AiOutlineStar><AiOutlineStar></AiOutlineStar></p>
+                <br></br>
+                <button 
+                onClick= { () => props.handleAddToCart(props.product)}
+                
                 className='btn-regular'> <FaShoppingCart /> Add to cart</button>
             </div>
         </div>

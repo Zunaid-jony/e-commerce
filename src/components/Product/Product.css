@@ -24,4 +24,10 @@
 .text-1{
     text-align: left;
 }
+.start{
+    text-align: center;
+    height: 20px;
+    color: gold;
+    
+}
 
